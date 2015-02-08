@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/lazAutoComplete.js" type="text/javascript"></script>
+        <link href="css/lazAutoComplete.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <select  name="selectCity">
+            <option value="">Select one...</option>
+            <option value="ActionScript">ActionScript</option>
+            <option value="AppleScript">AppleScript</option>
+            <option value="Asp">Asp</option>
+            <option value="BASIC">BASIC</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Clojure">Clojure</option>
+            <option value="COBOL">COBOL</option>
+            <option value="ColdFusion">ColdFusion</option>
+            <option value="Erlang">Erlang</option>
+            <option value="Fortran">Fortran</option>
+            <option value="Groovy">Groovy</option>
+            <option value="Haskell">Haskell</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Lisp">Lisp</option>
+            <option value="Perl">Perl</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Scala">Scala</option>
+        </select>
+        <script>
+            $('select').lazAutoComplete({placeholder: 'Placeholder Text..'}, function (text, value) {
+                window.console.log('Selected Text: ' + text);
+                window.console.log('Selected Value' + value);
+            });
+        </script>
+    </body>
+</html>

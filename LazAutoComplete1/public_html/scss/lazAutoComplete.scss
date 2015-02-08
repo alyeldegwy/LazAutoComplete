@@ -1,0 +1,74 @@
+.lazAutoComplete {
+    background: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+    position: relative;
+    display: block;
+    input, button{
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        border: none;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        outline: none;
+        vertical-align: top;
+    }
+
+    input{
+        width: 100%;
+    }
+
+    button{
+        position: absolute;
+        right: 5px;
+        background-color: #EEEEEE;
+        background-image:  url('../img/ui-icons_222222_256x240.png');
+        
+        background-position: -94px -17px;
+        background-size: 400px;
+
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
+    button:hover{
+        background-color:#FFFFFF; 
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        max-height: 200px;
+        display: none;
+        position: absolute;
+        top:100%;
+        left: -1px; //Negative value Main Border
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        width: 100%;
+        z-index: 500;
+        transition: all 0.5s;
+        overflow: auto;
+        li{
+            margin: 0px;
+            padding: 3px;
+            list-style: none;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: #EEEEEE;
+        }
+        .selected{
+            background-color: #EEEEEE;
+
+        }
+
+    }
+}
+.lazAutoComplete.focus {
+    background: #EEEEEE;
+}
+select{
+    /*display: none;*/
+}
