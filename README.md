@@ -29,9 +29,6 @@ Include jQuery and the plugin on a page. Then select a select tag to active the 
       <option value="Ruby">Ruby</option>
       <option value="Scala">Scala</option>
   </select>
-  <script>
-            
-        </script>
 ```
 
 Make sure to call tha function after the document ready is fired
