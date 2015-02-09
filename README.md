@@ -37,7 +37,7 @@ Make sure to call tha function after the document ready is fired
 $(function(){
 	$('select').lazAutoComplete({placeholder: 'Placeholder Text..'}, function (text, value) {
       window.console.log('Selected Text: ' + text);
-      window.console.log('Selected Value' + value);
+      window.console.log('Selected Value: ' + value);
   });
 });
 ```
